@@ -1,6 +1,6 @@
 import './App.css'    
 import Header from './components/Header' 
-import Business from './components/Business' 
+import BusinessList from './components/BusinessList'   
 import SearchBar from './components/SearchBar' 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <> 
         <Header/> 
         <SearchBar/> 
-        <Business/>  
+        <BusinessList/>  
     </>
   )
 }
