@@ -1,19 +1,24 @@
-import React from 'react'  
+import React from 'react'    
+import styles from '/css-modules/SearchBar.module.css'  
 
 const SearchBar = () => {
     return(
-        <> 
-            <section>
-                <h2>Best Match</h2> 
-                <h2>Highest Rated</h2> 
-                <h2>Most Reviewed</h2>   
+        <div className={styles.searchbarContainer} >   
+            <section className={styles.sortingOptions} >
+                <h2 className={styles.option} >Best Match</h2> 
+                <h2 className={styles.option} >Highest Rated</h2> 
+                <h2 className={styles.option} >Most Reviewed</h2>   
             </section>
-            <form>
-                <input id='search' /> 
-                <input id='location' />   
-                <button>Lets Go</button>
+            <form className={styles.searchForm}> 
+                <section>
+                    <input className={styles.input} placeholder='Search Business' /> 
+                    <input className={styles.input} placeholder='Where?' />    
+                </section> 
+                <section className={styles.buttonContainer}> 
+                    <button className={styles.button}>Lets Go</button>
+                </section> 
             </form>
-        </>
+        </div>
     )
 }  
 
